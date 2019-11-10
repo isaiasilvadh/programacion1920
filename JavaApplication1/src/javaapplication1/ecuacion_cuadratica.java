@@ -25,11 +25,11 @@ public class ecuacion_cuadratica {
         System.out.println("ingresar valor para c");
         double c = teclado.nextDouble();
 
-        double x1 = (b * (-1)) + (Math.sqrt(b * b) - 4 * a * c) / 2 * a;
+        double x1 = -b + (Math.sqrt(b * b) - 4 * a * c) / 2 * a;
 
         System.out.println(" La respuesta positiva es:" + x1);
 
-        double x2 = (b * (-1)) - (Math.sqrt(b * b) - 4 * a * c) / 2 * a;
+        double x2 = -b -  (Math.sqrt(b * b) - 4 * a * c) / 2 * a;
 
         System.out.println(" La respuesta negativa es:" + x2);
 
