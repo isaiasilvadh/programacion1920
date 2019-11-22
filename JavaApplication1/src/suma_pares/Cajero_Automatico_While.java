@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package javaapplication1;
+package suma_pares;
 
 import java.util.Scanner;
 
@@ -11,21 +11,32 @@ import java.util.Scanner;
  *
  * @author isaia
  */
-public class OperacionEnCajero {
-
-    public static void main(String[] args) {
+public class Cajero_Automatico_While {
+        public static void main(String[] args) {
+         Scanner teclado = new Scanner(System.in);
+       boolean nuevo_numero = true;
+       boolean ingreso = true; 
+        
+        while   (ingreso == true){
+            System.out.println("Desea seguir navegando si/no");
+            String respuesta = teclado.next();
+            respuesta = respuesta.toLowerCase();
+            
 
         System.out.println("CAJERO AUTOMATICO -- BANCO DE LOJA");
         System.out.println("Digita 1 para realizar un retiro ");
         System.out.println("Digita 2 para realizar un deposito");
         System.out.println("digita 3 para realizar una consulta de saldo");
         System.out.println("Digita 0 si no quieres hacer nada");
-        Scanner teclado = new Scanner(System.in);
+        
         System.out.println("Ingresar valor incial de tu cuenta");
         int saldo_cuenta = teclado.nextInt();
         System.out.println("ingrese la opcion elejida");
         int opcion = teclado.nextInt();
 
+        
+            if (respuesta.equals("si")) {
+        
         switch (opcion) {
             case 1:
                 System.out.println("OPCIÓN PARA REALIZAR UN RETIRO");
@@ -57,11 +68,21 @@ public class OperacionEnCajero {
                 break;
             case 4:
                 break;
-
         }
+        
+        }else if (respuesta.equals("no") ) {
+                ingreso = false;
+                
+            }
+            
 
         System.out.println("ahora tu saldo es de:" + saldo_cuenta);
-
+        
+        }
+        
+            System.out.println("gracias por su visita tenga una buena tarde");
     }
 
 }
+    
+
