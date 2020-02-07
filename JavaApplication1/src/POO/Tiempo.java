@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package PO;
+package POO;
 
 /**
  *
@@ -32,6 +32,7 @@ public class Tiempo {
     }
 
     /**
+     *
      * Metodo que encapsula al atributo hora y sirve para devolver el valor que
      * tiene la variable hora
      *
@@ -56,3 +57,4 @@ public String obtener_tiempo_real(){
 }
 
 }
+
